@@ -15,4 +15,5 @@ decreasebtn.onclick = function(){
 
 resetbtn.onclick = function() {
     count.textContent = 0
+    counter = 0
 }
