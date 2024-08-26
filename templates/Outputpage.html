@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/output.css">
+    <title>ASCII Art</title>
+</head>
+<body>
+    <div class="bigniba">
+
+        <div class="output">
+            <pre readonly>{{.Output}}</pre>
+        </div> 
+    <div class="button">
+        <form action="/" method="get" class="form-button">
+            <button type="submit" class="button">Return Home</button>
+        </form>
+    <form action="/Download" method="post" class="form-button">
+        <input type="hidden" name="inputValue" value="{{.Input}}">
+    <input type="hidden" name="bannerValue" value="{{.Banner}}">
+<button type="submit" class="button">Download</button>
+</form>
+</div>
+</div>
+</body>
+</html>

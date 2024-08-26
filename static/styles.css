@@ -1,0 +1,88 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body takes up the full height of the viewport */
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000; /* Optional: dark background to complement the Spline scene */
+    color: #fff; /* Text color */
+    overflow: hidden;
+}
+
+/* Container centering */
+.container {
+    position: relative;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+}
+
+spline-viewer {
+    position: absolute;
+    top: 0;
+    right: -450px;
+    width: 100%;
+    height: 100%;
+    animation: saroukh_yetle3 5s  ease-in-out infinite;
+}
+
+/* Form styles */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: #000;
+}
+
+.radiobuttons {
+    margin-bottom: 20px;
+}
+
+.radiobuttons input[type="radio"] {
+    margin-right: 5px;
+}
+
+.radiobuttons label {
+    margin-right: 15px;
+    font-size: 16px;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 0;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+@keyframes saroukh_yetle3 {
+    0% {
+        top:0;
+    }
+    100% {
+        top: -700px;
+    }
+}

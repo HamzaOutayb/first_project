@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ASCII-WEB</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ASCII ART GENERATOR</h1>
+        <form action="/ascii-art" method="post">
+            <textarea name="input" class="Text" placeholder="Enter text Here..." required ></textarea>
+            
+            <div class="radiobuttons">
+                <input type="radio" value="standard" name="template" checked>
+                <label for="standard">standard</label>
+                
+                <input type="radio" value="thinkertoy" name="template">
+                <label for="thinkertoy">thinkertoy</label>
+                
+                <input type="radio" value="shadow" name="template">
+                <label for="shadow">shadow</label>
+            </div>
+            
+            <input type="submit" value="Generate" class="button">
+        </form>
+    </div>
+    <script id="three-d"type="module" src="https://unpkg.com/@splinetool/viewer@1.9.20/build/spline-viewer.js"></script>
+    <spline-viewer url="https://prod.spline.design/7EWzEVn4J1sjO7G5/scene.splinecode"></spline-viewer>
+</body>
+</html>
